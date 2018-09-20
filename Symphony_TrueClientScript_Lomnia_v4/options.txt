@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\vebora\Documents\VuGen\Scripts\Symphony_TrueClientScript_Lomnia_v3
+-IC:\PCHost1260\include
+-ec:\users\vebora\documents\vugen\scripts\symphony_trueclientscript_lomnia_v3\\logfile.log
+c:\users\vebora\documents\vugen\scripts\symphony_trueclientscript_lomnia_v3\\combined_Symphony_TrueClientScript_Lomnia_v3.c
+c:\users\vebora\documents\vugen\scripts\symphony_trueclientscript_lomnia_v3\\pre_cci.c

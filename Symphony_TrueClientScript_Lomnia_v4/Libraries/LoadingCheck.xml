@@ -1,0 +1,82 @@
+<truLibrary engineVersion="12.60.1053.0" timestamp="Wed Sep 19 2018 09:29:09 GMT-0500 (Central Daylight Time)">
+<step type="library" stepId="step:{3b9a5438-885e-43da-10be-0344daa9c0a7}" action="LoadingCheck" level="43" arguments="{}" snapshotId="sjjfxuf"><step type="function" stepId="step:{5ed27828-a15e-f7de-017f-a5d876f380d7}" action="LoadCheck" level="1" arguments="{}" snapshotId="qmsqdaa" index="1" argsSchema="{}"><step type="block" stepId="step:{5f5b857b-f03a-b85d-60f8-ba2e419dc355}" action="internal" level="43" arguments="{}" snapshotId="klvzea"><step type="control" stepId="step:{e185f1ef-ff4c-8405-7448-259bda9b5731}" action="For" level="1" arguments="{&quot;Init&quot;:{&quot;value&quot;:&quot;var i = 0&quot;,&quot;evalJavaScript&quot;:true},&quot;Condition&quot;:{&quot;value&quot;:&quot;i &lt; 2&quot;,&quot;evalJavaScript&quot;:true},&quot;Increment&quot;:{&quot;value&quot;:&quot;i++&quot;,&quot;evalJavaScript&quot;:true}}" snapshotId="iqdneoavq" index="1"><step type="block" stepId="step:{5504b675-9d0a-d663-956e-6531d99e8232}" action="internal" level="43" arguments="{}" snapshotId="ixrlemmqk"><step type="testObject" stepId="step:{4ff25997-cf53-93b4-868b-6320075a9497}" action="Get Property" level="1" arguments="{&quot;Property&quot;:{&quot;value&quot;:&quot;Visible Text&quot;},&quot;Variable&quot;:{&quot;value&quot;:&quot;textValue&quot;}}" snapshotId="dhndppn" index="1" testObject="testObj:{3b0b1b79-4294-e337-0fd7-512500743c01}"/><step type="util" stepId="step:{21a9ae64-0cea-cf8f-f85a-0a258000561a}" action="Evaluate JavaScript" level="1" arguments="{&quot;Code&quot;:{&quot;value&quot;:&quot;if(textValue==\&quot;Loading\&quot;)\n  {\n    i=0;\n  }&quot;}}" snapshotId="bubngej" index="2"/></step></step></step></step><step type="function" stepId="step:{3d5c3129-2250-c587-d8e6-502931f1527e}" action="ThinkTime" level="1" arguments="{}" snapshotId="focucgayk" index="2" argsSchema="{}"><step type="block" stepId="step:{8c6be96d-3753-bb44-bdbb-eb7c11b77ce9}" action="internal" level="43" arguments="{}" snapshotId="cmsknil"><step type="util" stepId="step:{cdd1d723-7082-9d30-ec3d-44867eb38ae2}" action="Wait" level="1" arguments="{&quot;Interval&quot;:{&quot;param&quot;:true,&quot;value&quot;:&quot;thinktime&quot;}}" snapshotId="pqcst" index="1"/></step></step></step>
+<testObjects><testObject testObjId="testObj:{3b0b1b79-4294-e337-0fd7-512500743c01}" platform="web" autoName="All Assignments" manualName="All Assignments"><roles><role>element</role><role>label</role></roles><idents active="JavaScript"><ident type="XPath"><![CDATA[{
+"primaryScore":1,
+"implData":{
+	"value":"//label[text()=\"All Assignments\"]",
+	"suggestions":["//label[text()=\"All Assignments\"]","//div[@id=\"engagementSetupContainer\"]/div[2]/div/div/div[2]/div/div[3]/div[1]/div/div/div[2]/label"]
+}
+}]]></ident><ident type="Electors"><![CDATA[{
+"primaryScore":0.5501341,
+"implData":{
+	"ctxScore":0,
+	"electors":[
+		{"id":"tagName","value":"LABEL","score":0.01},
+		{"id":"class","value":"radiobuttonLabel","score":0.15},
+		{"id":"text","value":{"text":"All Assignments","tagName":"LABEL"},"score":0.4},
+		{"id":"leaf","value":true,"score":0.01},
+		{"id":"position","value":{"pos":"relative"},"score":0.1}
+	],
+	"secondaryData":{
+		"default": {
+				"totalObjs": 3,
+				"maxObjsPerElector": 200,
+				"total": {
+						"tagName": 3,
+						"class": 2,
+						"text": 1,
+						"leaf": null,
+						"position": null
+				},
+				"secondaryScore": 0.25022099776500006,
+				"totalCandidates": 3
+		}
+}
+}
+}]]></ident><ident type="Descriptors"><![CDATA[{
+"primaryScore":1,
+"implData":{
+	"ctxScore":0,
+	"userModified":false,
+	"expression":
+		{"op":"and",
+		"active":true,
+		"args":[
+			{"op":"equalsIgnoreCase",
+			"active":true,
+			"descriptor":"tagName",
+			"args":[
+				{"op":"property", "args":"tagName"},
+				{"op": "value", "args":"LABEL"}
+			]
+			},
+			{"op":"equals",
+			"active":true,
+			"descriptor":"text",
+			"args":[
+				{"op":"property", "args":"text"},
+				{"op": "value", "args":"All Assignments"}
+			]
+			}
+		]
+		},
+	"secondaryData":{
+		"default": {
+				"maxObjsPerDescriptor": 200,
+				"total": {
+						"tagName": 3,
+						"text": 1
+				},
+				"totalCandidates": 1
+		}
+}
+}
+}]]></ident><ident type="JavaScript"><![CDATA[{
+"primaryScore":1,
+"implData":{
+	"value":"//evalXPath(\"//div[text()=\\\"Loading\\\"]\");\nvar x=document.querySelectorAll(\"[id='loadingText']\");\nvar xlen=x.length;\n//window.alert(xlen);\nif(xlen==1)\n{\n  evalXPath(\"//div[@id=\\\"loadingText\\\"]\");\n}\nelse\n{\n    evalXPath(\"(//div[@id=\\\"loadingText\\\"])[\"+xlen+\"]\");\n  // evalXPath(\"(//div[@id=\\\"loadingText\\\"])[2]\");\n}"
+}
+}]]></ident></idents><methods><![CDATA[{
+}]]></methods></testObject></testObjects>
+<transactions/>
+</truLibrary>
